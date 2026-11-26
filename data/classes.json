@@ -1,0 +1,167 @@
+[
+  {
+    "id": 0,
+    "letter": "ក",
+    "romanization": "ka"
+  },
+  {
+    "id": 1,
+    "letter": "ខ",
+    "romanization": "kha"
+  },
+  {
+    "id": 2,
+    "letter": "គ",
+    "romanization": "ko"
+  },
+  {
+    "id": 3,
+    "letter": "ឃ",
+    "romanization": "kho"
+  },
+  {
+    "id": 4,
+    "letter": "ង",
+    "romanization": "ngo"
+  },
+  {
+    "id": 5,
+    "letter": "ច",
+    "romanization": "cha"
+  },
+  {
+    "id": 6,
+    "letter": "ឆ",
+    "romanization": "chha"
+  },
+  {
+    "id": 7,
+    "letter": "ជ",
+    "romanization": "cho"
+  },
+  {
+    "id": 8,
+    "letter": "ឈ",
+    "romanization": "chho"
+  },
+  {
+    "id": 9,
+    "letter": "ញ",
+    "romanization": "nho"
+  },
+  {
+    "id": 10,
+    "letter": "ដ",
+    "romanization": "da"
+  },
+  {
+    "id": 11,
+    "letter": "ឋ",
+    "romanization": "ttha"
+  },
+  {
+    "id": 12,
+    "letter": "ឌ",
+    "romanization": "do"
+  },
+  {
+    "id": 13,
+    "letter": "ឍ",
+    "romanization": "ttho"
+  },
+  {
+    "id": 14,
+    "letter": "ណ",
+    "romanization": "na"
+  },
+  {
+    "id": 15,
+    "letter": "ត",
+    "romanization": "ta"
+  },
+  {
+    "id": 16,
+    "letter": "ថ",
+    "romanization": "tha"
+  },
+  {
+    "id": 17,
+    "letter": "ទ",
+    "romanization": "to"
+  },
+  {
+    "id": 18,
+    "letter": "ធ",
+    "romanization": "tho"
+  },
+  {
+    "id": 19,
+    "letter": "ន",
+    "romanization": "no"
+  },
+  {
+    "id": 20,
+    "letter": "ប",
+    "romanization": "ba"
+  },
+  {
+    "id": 21,
+    "letter": "ផ",
+    "romanization": "pha"
+  },
+  {
+    "id": 22,
+    "letter": "ព",
+    "romanization": "po"
+  },
+  {
+    "id": 23,
+    "letter": "ភ",
+    "romanization": "pho"
+  },
+  {
+    "id": 24,
+    "letter": "ម",
+    "romanization": "mo"
+  },
+  {
+    "id": 25,
+    "letter": "យ",
+    "romanization": "yo"
+  },
+  {
+    "id": 26,
+    "letter": "រ",
+    "romanization": "ro"
+  },
+  {
+    "id": 27,
+    "letter": "ល",
+    "romanization": "lo"
+  },
+  {
+    "id": 28,
+    "letter": "វ",
+    "romanization": "vo"
+  },
+  {
+    "id": 29,
+    "letter": "ស",
+    "romanization": "sa"
+  },
+  {
+    "id": 30,
+    "letter": "ហ",
+    "romanization": "ha"
+  },
+  {
+    "id": 31,
+    "letter": "ឡ",
+    "romanization": "la"
+  },
+  {
+    "id": 32,
+    "letter": "អ",
+    "romanization": "qa"
+  }
+]

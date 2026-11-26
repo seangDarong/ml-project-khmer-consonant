@@ -1,0 +1,3 @@
+# Bad crops to leave out of training. One file name per line (name only, e.g. w05_s1_12.png).
+# Applied by src/data.py and the EDA notebook. Edit the BAD dict in notebooks/01b_eda.ipynb.
+filename,reason

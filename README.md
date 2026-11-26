@@ -7,6 +7,8 @@ A machine learning project that recognizes **handwritten Khmer consonants**. Giv
 ```
 
 > Intro to Machine Learning, 4th-year class project. Team of 3.
+>
+> **Task list per person:** see [TASKS.md](TASKS.md).
 
 | Phase | Status |
 |---|---|
