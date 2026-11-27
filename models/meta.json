@@ -1,0 +1,18 @@
+{
+  "epochs": 40,
+  "augment": false,
+  "seed": 42,
+  "logreg": {
+    "C": 0.1
+  },
+  "forest": {
+    "max_depth": 20
+  },
+  "trained_on": "1056 images from 25 writers (train + val)",
+  "cv_accuracy": {
+    "CNN (no augment)": 0.837,
+    "CNN + augment": 0.831,
+    "Logistic regression": 0.65,
+    "Random forest": 0.568
+  }
+}

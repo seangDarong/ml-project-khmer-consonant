@@ -3,7 +3,7 @@
 A machine learning project that recognizes **handwritten Khmer consonants**. Given an image of one handwritten letter, the model predicts which of the **33 Khmer consonants** it is, with a confidence score.
 
 ```
-[image of a handwritten ក]  →  model  →  "ក (ka)", 94% confident
+[image of a handwritten ក]  →  model  →  "ក (kor)", 94% confident
 ```
 
 > Intro to Machine Learning, 4th-year class project. Team of 3.
@@ -75,17 +75,17 @@ Handwriting recognition is well developed for Latin scripts, but there is very l
 
 | ID | Letter | Name | ID | Letter | Name | ID | Letter | Name |
 |---|---|---|---|---|---|---|---|---|
-| 0 | ក | ka | 11 | ឋ | ttha | 22 | ព | po |
-| 1 | ខ | kha | 12 | ឌ | do | 23 | ភ | pho |
+| 0 | ក | kor | 11 | ឋ | tthor | 22 | ព | po |
+| 1 | ខ | khor | 12 | ឌ | do | 23 | ភ | pho |
 | 2 | គ | ko | 13 | ឍ | ttho | 24 | ម | mo |
-| 3 | ឃ | kho | 14 | ណ | na | 25 | យ | yo |
-| 4 | ង | ngo | 15 | ត | ta | 26 | រ | ro |
-| 5 | ច | cha | 16 | ថ | tha | 27 | ល | lo |
-| 6 | ឆ | chha | 17 | ទ | to | 28 | វ | vo |
-| 7 | ជ | cho | 18 | ធ | tho | 29 | ស | sa |
-| 8 | ឈ | chho | 19 | ន | no | 30 | ហ | ha |
-| 9 | ញ | nho | 20 | ប | ba | 31 | ឡ | la |
-| 10 | ដ | da | 21 | ផ | pha | 32 | អ | qa |
+| 3 | ឃ | kho | 14 | ណ | nor | 25 | យ | yo |
+| 4 | ង | ngo | 15 | ត | tor | 26 | រ | ro |
+| 5 | ច | chor | 16 | ថ | thor | 27 | ល | lo |
+| 6 | ឆ | chhor | 17 | ទ | to | 28 | វ | vo |
+| 7 | ជ | cho | 18 | ធ | tho | 29 | ស | sor |
+| 8 | ឈ | chho | 19 | ន | no | 30 | ហ | hor |
+| 9 | ញ | nho | 20 | ប | bor | 31 | ឡ | lor |
+| 10 | ដ | dor | 21 | ផ | phor | 32 | អ | or |
 
 </details>
 
@@ -192,9 +192,9 @@ Raw files are messy: one file can hold several people, one person can be spread 
 ```
 outputs/dataset/
 ├── images/
-│   ├── 00_ka/    w01_s1_00.png, w02_s1_00.png, …
+│   ├── 00_kor/    w01_s1_00.png, w02_s1_00.png, …
 │   ├── …
-│   └── 32_qa/
+│   └── 32_or/
 └── labels.csv
 ```
 

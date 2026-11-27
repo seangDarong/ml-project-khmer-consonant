@@ -27,7 +27,7 @@ CLASSES_JSON = ROOT / "data" / "classes.json"
 IMG_SIZE = 64
 NUM_CLASSES = 33
 
-ROMAN = "ka kha ko kho ngo cha chha cho chho nho da ttha do ttho na ta tha to tho no ba pha po pho mo yo ro lo vo sa ha la qa".split()
+ROMAN = "kor khor ko kho ngo chor chhor cho chho nho dor tthor do ttho nor tor thor to tho no bor phor po pho mo yo ro lo vo sor hor lor or".split()
 LETTERS = list("កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវសហឡអ")
 assert len(ROMAN) == len(LETTERS) == NUM_CLASSES
 
@@ -68,6 +68,16 @@ def load_split(split: str, dataset_dir: Path = DATASET_DIR) -> tuple[np.ndarray,
     df = df[df.split == split]
     X = np.stack([load_image(dataset_dir / f) for f in df.filepath]) if len(df) else np.empty((0, IMG_SIZE, IMG_SIZE), np.float32)
     return X, df.label_id.to_numpy(np.int64)
+
+
+def load_all(dataset_dir: Path = DATASET_DIR) -> tuple[np.ndarray, pd.DataFrame]:
+    """Return (X, df) for every image: X is (N, 64, 64) float32, df has label_id, writer_id, split, ...
+
+    Row i of df describes X[i]. Used for cross-validation grouped by writer.
+    """
+    df = load_labels(dataset_dir)
+    X = np.stack([load_image(dataset_dir / f) for f in df.filepath])
+    return X, df
 
 
 def compute_mean_std(X: np.ndarray) -> tuple[float, float]:
@@ -113,18 +123,19 @@ def preprocess_drawing(img: np.ndarray, invert: bool | None = None) -> np.ndarra
 def augment(x: np.ndarray, rng: np.random.Generator | None = None,
             max_rot: float = 10, max_shift: float = 0.1, scale: tuple[float, float] = (0.9, 1.1),
             thickness: bool = True) -> np.ndarray:
-    """Random small rotation / shift / zoom (and optional stroke thickening or thinning).
+    """Random small rotation / shift / zoom, and sometimes thicker strokes.
 
     x: (64, 64) float32, ink = 1. Returns the same shape. Use on TRAIN images only.
+    Strokes are only ever made THICKER, never thinner: thinning erased ~73% of the ink of
+    thin-pen writers (w12), and canvas drawings in the app are thick anyway.
     """
     rng = rng or np.random.default_rng()
     c = IMG_SIZE / 2
     M = cv2.getRotationMatrix2D((c, c), rng.uniform(-max_rot, max_rot), rng.uniform(*scale))
     M[:, 2] += rng.uniform(-max_shift, max_shift, 2) * IMG_SIZE
     out = cv2.warpAffine(x, M, (IMG_SIZE, IMG_SIZE), flags=cv2.INTER_LINEAR, borderValue=0)
-    if thickness and rng.random() < 0.5:  # mimics thick canvas strokes vs thin pen strokes
-        k = np.ones((2, 2), np.uint8)
-        out = cv2.dilate(out, k) if rng.random() < 0.5 else cv2.erode(out, k)
+    if thickness and rng.random() < 0.3:  # mimics thick canvas strokes
+        out = cv2.dilate(out, np.ones((2, 2), np.uint8))
     return out
 
 

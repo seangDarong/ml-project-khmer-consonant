@@ -1,0 +1,5 @@
+model,mean,std
+CNN (no augment),0.837,0.025
+CNN + augment,0.831,0.042
+Logistic regression,0.65,0.028
+Random forest,0.568,0.027

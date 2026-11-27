@@ -1,0 +1,4 @@
+model,CV accuracy (dev),test accuracy,test top-3,test macro F1
+Logistic regression,0.65,0.523,0.742,0.505
+Random forest,0.568,0.462,0.697,0.438
+Simple CNN,0.837,0.803,0.947,0.798

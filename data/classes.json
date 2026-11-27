@@ -2,12 +2,12 @@
   {
     "id": 0,
     "letter": "ក",
-    "romanization": "ka"
+    "romanization": "kor"
   },
   {
     "id": 1,
     "letter": "ខ",
-    "romanization": "kha"
+    "romanization": "khor"
   },
   {
     "id": 2,
@@ -27,12 +27,12 @@
   {
     "id": 5,
     "letter": "ច",
-    "romanization": "cha"
+    "romanization": "chor"
   },
   {
     "id": 6,
     "letter": "ឆ",
-    "romanization": "chha"
+    "romanization": "chhor"
   },
   {
     "id": 7,
@@ -52,12 +52,12 @@
   {
     "id": 10,
     "letter": "ដ",
-    "romanization": "da"
+    "romanization": "dor"
   },
   {
     "id": 11,
     "letter": "ឋ",
-    "romanization": "ttha"
+    "romanization": "tthor"
   },
   {
     "id": 12,
@@ -72,17 +72,17 @@
   {
     "id": 14,
     "letter": "ណ",
-    "romanization": "na"
+    "romanization": "nor"
   },
   {
     "id": 15,
     "letter": "ត",
-    "romanization": "ta"
+    "romanization": "tor"
   },
   {
     "id": 16,
     "letter": "ថ",
-    "romanization": "tha"
+    "romanization": "thor"
   },
   {
     "id": 17,
@@ -102,12 +102,12 @@
   {
     "id": 20,
     "letter": "ប",
-    "romanization": "ba"
+    "romanization": "bor"
   },
   {
     "id": 21,
     "letter": "ផ",
-    "romanization": "pha"
+    "romanization": "phor"
   },
   {
     "id": 22,
@@ -147,21 +147,21 @@
   {
     "id": 29,
     "letter": "ស",
-    "romanization": "sa"
+    "romanization": "sor"
   },
   {
     "id": 30,
     "letter": "ហ",
-    "romanization": "ha"
+    "romanization": "hor"
   },
   {
     "id": 31,
     "letter": "ឡ",
-    "romanization": "la"
+    "romanization": "lor"
   },
   {
     "id": 32,
     "letter": "អ",
-    "romanization": "qa"
+    "romanization": "or"
   }
 ]
